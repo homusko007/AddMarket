@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="image/favicon.png">
+    <title>AddMarkets Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="open">
+            <div class="container header__container" id="close">
+
+                <a href="index.html" class="heder__logo">
+                    <svg width="132" height="35" viewBox="0 0 132 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.06663 20.3921V29.8219H0V15.7892C0.449459 16.5835 1.0215 17.3371 1.69569 18.0295C2.47202 18.8238 3.30965 19.4756 4.229 19.9847C4.49459 20.1273 4.78061 20.2699 5.06663 20.3921Z"
+                            fill="#303030" />
+                        <path
+                            d="M30.1546 24.8328C30.1546 27.6231 29.2353 29.9856 27.3966 31.8594C25.5579 33.7535 23.2697 34.6903 20.5321 34.6903H12.4623V21.289H17.6719V29.8023H20.5321C21.9009 29.8023 23.0246 29.3542 23.903 28.4377C24.7815 27.5212 25.2106 26.3196 25.2106 24.8124C25.2106 23.3053 24.7815 22.1037 23.903 21.1872C23.045 20.2707 21.9213 19.8226 20.5321 19.8226H9.60208C7.96768 19.8226 6.49672 19.4967 5.18921 18.8246C5.10749 18.7839 5.00534 18.7431 4.92362 18.682C4.12685 18.2543 3.4118 17.6841 2.73761 16.9916C2.26772 16.5232 1.87956 16.014 1.53225 15.4845C0.572039 13.9977 0.0612899 12.2869 0 10.352V9.57808C0.0817198 6.95077 1.00107 4.73079 2.75804 2.93851C4.59674 1.0444 6.88489 0.0871582 9.60208 0.0871582H17.6719V13.4885H12.4623V4.97519H9.60208C8.23327 4.97519 7.10962 5.42326 6.23114 6.33976C5.35265 7.25627 4.92362 8.45791 4.92362 9.96505C4.92362 11.4722 5.35265 12.6738 6.23114 13.5903C7.08919 14.5069 8.21284 14.9549 9.60208 14.9549H20.5117C23.2493 14.9549 25.5374 15.8918 27.3761 17.7859C29.2353 19.68 30.1546 22.0222 30.1546 24.8328Z"
+                            fill="#303030" />
+                        <path
+                            d="M50.6869 19.7404H54.4869V34.6285H50.6869V26.604L47.0708 32.5918H46.6827L43.087 26.6243V34.6285H39.2666V19.7404H43.087L46.8665 26.0948L50.6869 19.7404Z"
+                            fill="#303030" />
+                        <path
+                            d="M49.2369 0.0456543H44.5789L39.6553 14.9338H43.8026L44.4359 12.7953H49.4004L50.0337 14.9338H54.1401L49.2369 0.0456543ZM45.4165 9.51621L46.9079 4.46525L48.4197 9.51621H45.4165Z"
+                            fill="#47A7E3" />
+                        <path
+                            d="M61.3312 0.0456543H55.2431V9.92355H59.1656V3.73205H61.3108C62.3527 3.73205 63.1903 4.07828 63.8441 4.77075C64.4979 5.46322 64.8247 6.35936 64.8247 7.4999C64.8247 8.64044 64.4979 9.53658 63.8441 10.2291C63.1903 10.9215 62.3527 11.2678 61.3108 11.2678H60.9226H59.1452H55.2227V14.9542H61.3108C63.3742 14.9542 65.0903 14.2413 66.4796 12.8156C67.8688 11.39 68.5634 9.61805 68.5634 7.52027C68.5634 5.40212 67.8688 3.63021 66.4796 2.2249C65.1108 0.758492 63.3946 0.0456543 61.3312 0.0456543Z"
+                            fill="#47A7E3" />
+                        <path
+                            d="M76.429 0.0456543H70.3408V3.73204H74.2634H75.7956H76.429C77.4709 3.73204 78.3085 4.07828 78.9623 4.77075C79.616 5.46322 79.9429 6.35936 79.9429 7.4999C79.9429 8.64044 79.616 9.53658 78.9623 10.2291C78.3085 10.9215 77.4709 11.2678 76.429 11.2678H74.2838V5.05589H70.3613V14.9338H76.4494C78.5128 14.9338 80.2289 14.2209 81.6182 12.7953C83.0074 11.3696 83.702 9.59768 83.702 7.4999C83.702 5.38175 83.0074 3.60984 81.6182 2.20453C80.2085 0.758492 78.4924 0.0456543 76.429 0.0456543Z"
+                            fill="#47A7E3" />
+                        <path d="M108.3 23.4267H111.998V34.6285H115.818V23.4267H119.495V19.7404H108.3V23.4267Z"
+                            fill="#303030" />
+                        <path
+                            d="M131.058 28.3758C130.792 27.8259 130.404 27.3778 129.894 27.0316C129.362 26.6854 128.892 26.4206 128.443 26.2373C127.994 26.054 127.422 25.8503 126.686 25.6467C125.685 25.3412 124.99 25.0968 124.643 24.8524C124.296 24.6283 124.112 24.3432 124.112 24.0173C124.112 23.7322 124.234 23.5082 124.459 23.3249C124.684 23.1416 125.031 23.0397 125.501 23.0397C126.584 23.0397 127.36 23.5896 127.83 24.6894L131.038 22.8157C130.527 21.7159 129.791 20.8605 128.811 20.2902C127.851 19.6996 126.727 19.4144 125.481 19.4144C124.01 19.4144 122.763 19.8421 121.783 20.6975C120.802 21.5529 120.291 22.6528 120.291 24.0377C120.291 25.3208 120.68 26.3188 121.476 27.0316C122.273 27.7445 123.356 28.2944 124.725 28.7017C125.685 28.9665 126.318 29.1701 126.604 29.272C127.279 29.5367 127.605 29.9033 127.605 30.331C127.605 31.0031 127.013 31.329 125.848 31.329C124.439 31.329 123.458 30.6773 122.906 29.3534L119.638 31.2475C120.046 32.3881 120.782 33.2842 121.803 33.9563C122.845 34.6284 124.153 34.9543 125.726 34.9543C127.442 34.9543 128.811 34.547 129.853 33.7119C130.895 32.8973 131.405 31.7567 131.405 30.2903C131.446 29.5571 131.324 28.9054 131.058 28.3758Z"
+                            fill="#303030" />
+                        <path
+                            d="M65.151 19.7404H60.493L55.5693 34.6285H59.7166L60.3499 32.49H65.3144L65.9478 34.6285H70.0746L65.151 19.7404ZM61.3306 29.2109L62.822 24.16L64.3338 29.2109H61.3306Z"
+                            fill="#303030" />
+                        <path
+                            d="M101.659 28.8647H106.808V25.3616H101.659V23.3045H107.339V19.7404H97.8594V34.6285H107.441V31.0643H101.659V28.8647Z"
+                            fill="#303030" />
+                        <path
+                            d="M96.5523 19.7404H92.2825L88.2169 25.993V19.7404H84.3965V34.6285H88.2169V27.9685L92.5072 34.6285H96.7566L91.8126 26.9706L96.5523 19.7404Z"
+                            fill="#303030" />
+                        <path
+                            d="M79.983 29.1295C80.7593 28.6814 81.3926 28.0907 81.8421 27.3575C82.2916 26.604 82.5163 25.7893 82.5163 24.8932C82.5163 23.4064 82.0055 22.1844 80.9636 21.2068C79.9421 20.2292 78.655 19.7404 77.1432 19.7404H76.898H76.3056H74.9776H72.4035H71.1572V34.6285H74.9776V29.8219H76.3464L78.941 34.6285H83.027L79.983 29.1295ZM78.2464 26.1355C77.94 26.441 77.5722 26.604 77.1023 26.5836H74.9776V25.606V23.2434H76.3056H76.898H77.0819C77.5518 23.2434 77.94 23.4064 78.226 23.7119C78.5324 24.0174 78.6755 24.4247 78.6755 24.9339C78.6959 25.4227 78.5529 25.83 78.2464 26.1355Z"
+                            fill="#303030" />
+                    </svg>
+                </a>
+
+
+                <nav class="menu__body">
+                    <a href="#close" class="burger_btn_close">
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1 15.2814C1 22.9944 7.28698 29.2814 15 29.2814C22.8594 29.2814 29 23.0011 29 15.2814C29 7.56835 22.713 1.28137 15 1.28137C7.28698 1.28137 1 7.56835 1 15.2814ZM0 15.2814C0 23.5467 6.73469 30.2814 15 30.2814C23.4184 30.2814 30 23.5467 30 15.2814C30 7.01607 23.2653 0.281372 15 0.281372C6.73469 0.281372 0 7.01607 0 15.2814Z"
+                                fill="#56AEDB" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.8105 19.6047C11.0839 19.8781 11.5271 19.8781 11.8004 19.6047L15.0667 16.3384L18.3332 19.6049C18.6066 19.8783 19.0498 19.8783 19.3232 19.6049C19.5966 19.3316 19.5966 18.8884 19.3232 18.615L16.0567 15.3485L19.323 12.0822C19.5964 11.8088 19.5964 11.3656 19.323 11.0922C19.0496 10.8189 18.6064 10.8189 18.333 11.0922L15.0667 14.3585L11.8006 11.0924C11.5273 10.8191 11.0841 10.8191 10.8107 11.0924C10.5373 11.3658 10.5373 11.809 10.8107 12.0824L14.0768 15.3485L10.8105 18.6148C10.5371 18.8882 10.5371 19.3314 10.8105 19.6047Z"
+                                fill="#56AEDB" />
+                        </svg>
+                    </a>
+                    <ul class="heder__menu-items">
+                        <li class="menu-item">
+                            <a href="market.html">маркетплейсы</a>
+                        </li>
+                        <li class="menu-item">
+                            <div class="drop_menu">
+                                <a href="#" class="drop_btn">контент<img src="image/Polygon1.png" alt="button" class="poligon-btn">
+                                </a>
+                                <div class="drop_links">
+                                    <a href="#">Фото 360</a>
+                                    <a href="#">Фото на невидимом манекене</a>
+                                    <a href="#"> Предметная фотосъёмка</a>
+                                    <a href="#"> Фото раскладки товара</a>
+                                    <a href="#"> SEO опитимизированные тексты</a>
+                                    <a href="#"> Дизайн карточки товара и инфографика</a>
+                                    <a href="#"> Фото на моделях</a>
+                                    <a href="#">Имиджевая съёмка</a>
+                                    <a href="#">Видеосъёмка</a>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <input type="checkbox" id="accordion_1" class="accordion_input">
+                                <label for="accordion_1" class="accordion_trigger">контент<img src="image/Polygon1.png" alt="button" class="poligon-btn">
+                                        alt="polygon"></label>
+                                <ul class="accordion_content accordion_first">
+                                    <li><a href="#">Фото 360</a></li>
+                                    <li><a href="#">Фото на невидимом манекене</a></li>
+                                    <li><a href="#"> Предметная фотосъёмка</a></li>
+                                    <li><a href="#"> Фото раскладки товара</a></li>
+                                    <li><a href="#"> SEO опитимизированные тексты</a></li>
+                                    <li><a href="#"> Дизайн карточки товара и инфографика</a></li>
+                                    <li><a href="#"> Фото на моделях</a></li>
+                                    <li><a href="#">Имиджевая съёмка</a></li>
+                                    <li><a href="#">Видеосъёмка</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="menu-item">
+                            <a href="design.html">дизайн</a>
+                        </li>
+                        <li class="menu-item">
+                            <div class="drop_menu">
+                                <a href="contact.html">контакты</a>
+                            </div>
+                            <div class="accordion">
+                                <input type="checkbox" id="accordion_2" class="accordion_input">
+                                <label for="accordion_2" class="accordion_trigger">контакты<img src="image/Polygon1.png"
+                                        alt="polygon"></label>
+                                <ul class="accordion_content">
+                                    <li><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.40562 0C3.76502 0 0 3.76502 0 8.40562C0 13.0462 3.76502 16.8112 8.40562 16.8112C13.0462 16.8112 16.8112 13.0462 16.8112 8.40562C16.8112 3.76502 13.1338 0 8.40562 0ZM8.40562 15.673C4.37793 15.673 1.13826 12.4333 1.13826 8.40562C1.13826 4.37793 4.37793 1.13826 8.40562 1.13826C12.4333 1.13826 15.673 4.37793 15.673 8.40562C15.673 12.4333 12.4333 15.673 8.40562 15.673Z"
+                                                fill="#F68738" />
+                                            <path
+                                                d="M4.64111 5.69131C4.72867 6.91713 5.5167 8.05539 6.21717 9.01853C6.83008 9.89412 7.6181 10.6821 8.40613 11.2951C8.93148 11.7328 9.45683 12.0831 10.0697 12.4333C10.42 12.6084 10.6827 12.7835 11.1204 12.6084C11.7334 12.4333 13.2219 11.6453 13.0467 10.8573C12.9592 10.4195 12.4338 9.98168 12.0836 9.719C11.6458 9.36877 11.0329 8.84341 10.5075 9.36877C10.2449 9.63144 9.98219 10.2444 9.54439 10.2444C9.1066 10.3319 8.66881 9.719 8.40613 9.45632C7.96834 8.93097 7.53055 8.40562 7.09275 7.88027C6.74252 7.26736 7.18031 7.09224 7.6181 6.74201C7.79322 6.56689 8.0559 6.47933 8.14346 6.21666C8.31857 5.77886 7.88078 5.25351 7.6181 4.90328C7.35543 4.55304 7.09275 4.29037 6.83008 4.02769C6.47984 3.67746 6.04205 3.94013 5.69182 4.20281C5.25402 4.6406 4.90379 5.0784 4.64111 5.69131Z"
+                                                fill="#F68738" />
+                                        </svg>
+                                        <a href="#">+7 (499) 460 55 61</a>
+                                    </li>
+                                    <li><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.40562 16.8113C3.77395 16.8113 0 13.0373 0 8.40563C0 3.77396 3.77395 0 8.40562 0C13.0373 0 16.8112 3.77396 16.8112 8.40563C16.8112 13.0373 13.1231 16.8113 8.40562 16.8113ZM8.40562 1.2008C4.46013 1.2008 1.28658 4.37435 1.28658 8.31985C1.28658 12.2653 4.46013 15.4389 8.40562 15.4389C12.3511 15.4389 15.5247 12.2653 15.5247 8.31985C15.5247 4.37435 12.3511 1.2008 8.40562 1.2008Z"
+                                                fill="#F68738" />
+                                            <path
+                                                d="M11.7512 5.06091H5.14678C4.71792 5.06091 4.28906 5.404 4.28906 5.91863V10.8934C4.28906 11.3222 4.63215 11.7511 5.14678 11.7511H11.7512C12.1801 11.7511 12.6089 11.408 12.6089 10.8934V5.91863C12.6089 5.404 12.1801 5.06091 11.7512 5.06091ZM11.7512 10.8076H5.14678V6.69058L8.49187 8.7491L11.837 6.69058V10.8076H11.7512ZM8.4061 7.97716L5.14678 5.83287H11.7512L8.4061 7.97716Z"
+                                                fill="#F68738" />
+                                        </svg>
+                                        <a href="support@addmarkets.ru">support@addmarkets.ru</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="heder__menu-btn">
+                        <a href="#popup_heder" class="header-button">ОБРАТНЫЙ ЗВОНОК</a>
+                    </div>
+                    <a href="tel:+7(499)3446091" class="menu-item">+7 (499) 344 60 91</a>
+                </nav>
+
+                <a href="#open" class="burger_btn">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 15C1 22.713 7.28698 29 15 29C22.8594 29 29 22.7197 29 15C29 7.28698 22.713 1 15 1C7.28698 1 1 7.28698 1 15ZM0 15C0 23.2653 6.73469 30 15 30C23.4184 30 30 23.2653 30 15C30 6.7347 23.2653 0 15 0C6.73469 0 0 6.7347 0 15Z"
+                            fill="#56AEDB" />
+                        <rect x="9.50024" y="10.2002" width="10.9091" height="1.4" rx="0.4" fill="#56AEDB" />
+                        <rect x="9.5" y="14.2905" width="10.9091" height="1.4" rx="0.4" fill="#56AEDB" />
+                        <rect x="9.5" y="18.3817" width="10.9091" height="1.4" rx="0.4" fill="#56AEDB" />
+                    </svg>
+                </a>
+
+            </div>
+        </header>
+
+        <main>
+            <section class="first">
+                <div class="first__bg-img">
+                    <div class="container first__container">
+                        <div class="first__main">
+                            <div class="first__inform-title">
+                                <h1>Продающий контент<br />
+                                    <span>для маркетплейсов <br /> и интернет-магазинов</span>
+                                </h1>
+                            </div>
+                            <div class="first__inform-subtitle">
+                                <p><span>Мы делаем:</span> фотосъёмка на моделях, предметное и 3D фото, видео
+                                    проходка / обзор товара в т. ч. с инфографикой.<br />
+                                    <span>Пишем:</span> SEO оптимизированные тексты — заголовки и описания
+                                    для карточки товара<br />
+                                    <span>Создаём:</span> фирменный стиль, дизайн и графику для карточки товара
+                                </p>
+
+                                <div class="first__inform-btn button">
+                                    <a href="#popup_first" class="button_action">ОСТАВИТЬ ЗАЯВКУ</a>
+                                </div>
+                            </div>
+                            <div class="image_box">
+                                <img src="image/img_main.png" class="image_first" alt="employees">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="second">
+                <div class="second__info container">
+                    <div class="section__title">
+                        <svg width="93" height="36" viewBox="0 0 93 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M89.9725 30C91.5927 30 92.9968 31.2857 92.9968 33C92.9968 34.6071 91.7007 36 89.9725 36C88.3524 36 86.9482 34.7143 86.9482 33C87.0563 31.2857 88.3524 30 89.9725 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M68.2626 30C69.8828 30 71.2869 31.2857 71.2869 33C71.2869 34.6071 69.9908 36 68.2626 36C66.6424 36 65.2383 34.7143 65.2383 33C65.3463 31.2857 66.6424 30 68.2626 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M46.5526 30C48.1728 30 49.5769 31.2857 49.5769 33C49.5769 34.6071 48.2808 36 46.5526 36C44.8244 36 43.5283 34.7143 43.5283 33C43.5283 31.2857 44.9325 30 46.5526 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M89.9755 15C91.5956 15 92.9998 16.2857 92.9998 18C92.9998 19.6071 91.7036 21 89.9755 21C88.2473 21 86.9512 19.7143 86.9512 18C86.9512 16.2857 88.3553 15 89.9755 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M24.8427 30C26.4628 30 27.867 31.2857 27.867 33C27.867 34.6071 26.5708 36 24.8427 36C23.2225 36 21.8184 34.7143 21.8184 33C21.8184 31.2857 23.1145 30 24.8427 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M45.9999 15C47.62 15 49.0242 16.2857 49.0242 18C49.0242 19.6071 47.7281 21 45.9999 21C44.3797 21 42.9756 19.7143 42.9756 18C42.9756 16.2857 44.2717 15 45.9999 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M45.9999 0C47.62 0 49.0242 1.28571 49.0242 3C49.0242 4.60714 47.7281 6 45.9999 6C44.3797 6 42.9756 4.71429 42.9756 3C42.9756 1.28571 44.2717 0 45.9999 0Z"
+                                fill="#E97522" />
+                            <path
+                                d="M3.0243 30C4.64446 30 6.0486 31.2857 6.0486 33C6.0486 34.6071 4.75248 36 3.0243 36C1.40414 36 0 34.7143 0 33C0.108011 31.2857 1.40414 30 3.0243 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M25.0116 15C26.6318 15 28.0359 16.2857 28.0359 18C28.0359 19.6071 26.7398 21 25.0116 21C23.3914 21 21.9873 19.7143 21.9873 18C22.0953 16.2857 23.3914 15 25.0116 15Z"
+                                fill="#E97522" />
+                        </svg>
+                        <h2>Почему с нами выгодно?</h2>
+                        <p><span>AddMarkets</span> - Ваш контент отдел.</p>
+                    </div>
+                    <div class="second__main__info">
+                        <p class="list__info__item row_1"> Мы изготовили более 10.000 карточек товара</p>
+                        <p class="list__info__item row_2">Мы используем все инструменты при подготовке контента,
+                            которые помогут Вашему Товару выйти в ТОПы поисковой
+                            выдачи маркетплейсов, а также Яндекс и Google</p>
+                        <p class="list__info__item row_3">Мы знаем как поднять CTR Вашей карточки Товара</p>
+                        <p class="list__info__item row_4">Мы соблюдаем все условия маркетплейсов</p>
+                        <p class="list__info__item row_5">Мы принимаем заказы со всей страны</p>
+                        <p class="list__info__item row_6">Благодаря качественно проработанному контенту, органическая
+                            выдача карточки Товара повышается на сотни %, что в свою очередь
+                            сэкономит Вам кругленькую сумму на покупку отзывов, рекламных
+                            компаний и других способов продвижения</p>
+                        <p class="list__info__item row_7">Заказывая весь комплекс работ по контенту у нас Вы
+                            экономите
+                            в деньгах, времени и нервах, и получаете надёжного партнёра
+                            Вашего бизнеса</p>
+
+                        <div class="second__form">
+                            <div class="form__title">
+                                <h3>Получить консультацию</h3>
+                                <p>
+                                    Заполните форму и оператор “AddMarkets”
+                                    свяжется с Вами в ближайшее время
+                                </p>
+                            </div>
+                            <form method="get" class="request-form">
+                                <input type="text" class="request_input" id="name" placeholder="Имя &lowast;">
+                                <input type="tel" class="request_input" id="phone" placeholder="Телефон &lowast;">
+                                <input type="email" class="request_input" id="email" placeholder="E-mail">
+                                <input type="text" class="request_input" id="link" placeholder="Ссылка на сайт">
+                                <button class="request_btn" type="submit" id="request-action">ОСТАВИТЬ ЗАЯВКУ</button>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="ok">
+                                    <label for="ok" class="checkbox_text"> С <a href="#">Политикой
+                                            конфиденциальности</a> ознакомлен</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services_container container">
+                    <div class="section__title">
+                        <svg width="93" height="36" viewBox="0 0 93 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M89.9725 30C91.5927 30 92.9968 31.2857 92.9968 33C92.9968 34.6071 91.7007 36 89.9725 36C88.3524 36 86.9482 34.7143 86.9482 33C87.0563 31.2857 88.3524 30 89.9725 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M68.2626 30C69.8828 30 71.2869 31.2857 71.2869 33C71.2869 34.6071 69.9908 36 68.2626 36C66.6424 36 65.2383 34.7143 65.2383 33C65.3463 31.2857 66.6424 30 68.2626 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M46.5526 30C48.1728 30 49.5769 31.2857 49.5769 33C49.5769 34.6071 48.2808 36 46.5526 36C44.8244 36 43.5283 34.7143 43.5283 33C43.5283 31.2857 44.9325 30 46.5526 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M89.9755 15C91.5956 15 92.9998 16.2857 92.9998 18C92.9998 19.6071 91.7036 21 89.9755 21C88.2473 21 86.9512 19.7143 86.9512 18C86.9512 16.2857 88.3553 15 89.9755 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M24.8427 30C26.4628 30 27.867 31.2857 27.867 33C27.867 34.6071 26.5708 36 24.8427 36C23.2225 36 21.8184 34.7143 21.8184 33C21.8184 31.2857 23.1145 30 24.8427 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M45.9999 15C47.62 15 49.0242 16.2857 49.0242 18C49.0242 19.6071 47.7281 21 45.9999 21C44.3797 21 42.9756 19.7143 42.9756 18C42.9756 16.2857 44.2717 15 45.9999 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M45.9999 0C47.62 0 49.0242 1.28571 49.0242 3C49.0242 4.60714 47.7281 6 45.9999 6C44.3797 6 42.9756 4.71429 42.9756 3C42.9756 1.28571 44.2717 0 45.9999 0Z"
+                                fill="#E97522" />
+                            <path
+                                d="M3.0243 30C4.64446 30 6.0486 31.2857 6.0486 33C6.0486 34.6071 4.75248 36 3.0243 36C1.40414 36 0 34.7143 0 33C0.108011 31.2857 1.40414 30 3.0243 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M25.0116 15C26.6318 15 28.0359 16.2857 28.0359 18C28.0359 19.6071 26.7398 21 25.0116 21C23.3914 21 21.9873 19.7143 21.9873 18C22.0953 16.2857 23.3914 15 25.0116 15Z"
+                                fill="#E97522" />
+                        </svg>
+                        <h2>Наши услуги</h2>
+                    </div>
+
+                    <div class="services_items">
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_1">
+                                    <p>oт<span>200</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Фото на моделях</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid1.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_2">
+                                    <p>oт<span>150</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Предметная фотосъёмка</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid2.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_3">
+                                    <p>oт<span>790</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Видео</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid3.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_4">
+                                    <p>oт<span>200</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Дизайн карточек товара и инфографика</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid4.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_5">
+                                    <p>oт<span>90</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Текст + SEO</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid5.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_6">
+                                    <p>oт<span>250</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Фото 360</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid6.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_7">
+                                    <p>oт<span>150</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Фотосъёмка в раскладку</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid7.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_8">
+                                    <p>oт<span>150</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Фото на невидимом манекене</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid8.svg" alt="card">
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="services_item_content">
+                                <div class="services_item_title" id="card_9">
+                                    <p>oт<span>500</span></p><img src="image/rub.svg" alt="progres">
+                                </div>
+                                <div class="services_item_info">Имиджевая фотосъемка</div>
+                            </div>
+                            <div class="services_item_img">
+                                <img src="image/grid9.svg" alt="card">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-btn button">
+                        <a href="#popup_services" class="button_action">заказать расчет стоимости</a>
+                    </div>
+
+                    <div class="services__footer">
+                        Наша команда
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="team_container container">
+                    <div class="team_members">
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+                        <div class="team_items">
+                            <div class="team_foto">
+                                <img src="image/foto.jpg" alt="team-foto">
+                            </div>
+                            <h4 class="team_name">Анатолий Вассерман</h4>
+                            <p class="team_position">Специалист отдела продаж</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slider">
+                <div class="slider__container">
+                    <div class="section__title slider__title">
+                        <svg width="94" height="36" viewBox="0 0 94 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M90.023 30C91.6441 30 93.049 31.2857 93.049 33C93.049 34.6071 91.7522 36 90.023 36C88.402 36 86.9971 34.7143 86.9971 33C87.1051 31.2857 88.402 30 90.023 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M68.3014 30C69.9225 30 71.3274 31.2857 71.3274 33C71.3274 34.6071 70.0305 36 68.3014 36C66.6803 36 65.2754 34.7143 65.2754 33C65.3835 31.2857 66.6803 30 68.3014 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M46.5787 30C48.1998 30 49.6047 31.2857 49.6047 33C49.6047 34.6071 48.3079 36 46.5787 36C44.8496 36 43.5527 34.7143 43.5527 33C43.5527 31.2857 44.9577 30 46.5787 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M46.5787 15C48.1998 15 49.6047 16.2857 49.6047 18C49.6047 19.6071 48.3079 21 46.5787 21C44.8496 21 43.5527 19.7143 43.5527 18C43.5527 16.2857 44.9577 15 46.5787 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M24.8561 30C26.4771 30 27.8821 31.2857 27.8821 33C27.8821 34.6071 26.5852 36 24.8561 36C23.235 36 21.8301 34.7143 21.8301 33C21.8301 31.2857 23.1269 30 24.8561 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M24.8561 15C26.4771 15 27.8821 16.2857 27.8821 18C27.8821 19.6071 26.5852 21 24.8561 21C23.235 21 21.8301 19.7143 21.8301 18C21.8301 16.2857 23.1269 15 24.8561 15Z"
+                                fill="#E97522" />
+                            <path
+                                d="M24.8561 0C26.4771 0 27.8821 1.28571 27.8821 3C27.8821 4.60714 26.5852 6 24.8561 6C23.235 6 21.8301 4.71429 21.8301 3C21.8301 1.28571 23.1269 0 24.8561 0Z"
+                                fill="#E97522" />
+                            <path
+                                d="M3.02599 30C4.64706 30 6.05198 31.2857 6.05198 33C6.05198 34.6071 4.75513 36 3.02599 36C1.40493 36 0 34.7143 0 33C0.108071 31.2857 1.40493 30 3.02599 30Z"
+                                fill="#E97522" />
+                            <path
+                                d="M3.02599 15C4.64706 15 6.05198 16.2857 6.05198 18C6.05198 19.6071 4.75513 21 3.02599 21C1.40493 21 0 19.7143 0 18C0.108071 16.2857 1.40493 15 3.02599 15Z"
+                                fill="#E97522" />
+                        </svg>
+                        <h2>Чем мы можем быть ещё<br />
+                            полезны для Вашего бизнеса?</h2>
+                    </div>
+                    <div class="image-slider swiper-container slider_large">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid1.svg" alt="картинка">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid2.svg" alt="картинка">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid3.svg" alt="картинка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="image-slider swiper-container slider_small">
+                        <div class="image-slider swiper-container">
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid4.svg" alt="картинка">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid5.svg" alt="картинка">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="image/slid6.svg" alt="картинка">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--=====================Last========================-->
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container">
+
+                    <div class="footer__consult_box">
+                        <div class="footer__consult_image">
+                            <img src="image/consult_img.png" class="footer__consult_img" alt="consalter">
+                        </div>
+                        <div class="footer__consult_info">
+                            <h4>Здесь вы можете
+                                получить консультацию специалиста</h4>
+                            <p>Просто оставьте ваши контакты и наш<br />
+                                специалист обязательно свяжется<br>
+                                с вами в ближайшее время.</p>
+                            <div class="button footer__consult_btn">
+                                <a href="#popup_consult" class="button_action">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__info_box">
+                        <h4 class="footer__info_title col_1">дизайн</h4>
+                        <h4 class="footer__info_title col_2">контент</h4>
+                        <h4 class="footer__info_title col_3">контакты</h4>
+                        <h4 class="footer__info_title col_4">маркетплейсы</h4>
+
+                        <div class="footer__info_items col_5">
+                            <h5 class="footer__info_subtitle">услуги:</h5>
+                            <ul>
+                                <li><a href="#">Логотип</a></li>
+                                <li><a href="#">Брендинг</a></li>
+                                <li><a href="#">Дизайн сайта</a></li>
+                                <li><a href="#">Дизайн карточек товара</a></li>
+                                <li><a href="#">Оформление для маркетплейсов</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__info_items col_6">
+                            <h5 class="footer__info_subtitle">услуги:</h5>
+                            <ul>
+                                <li><a href="#">Фото на моделях</a></li>
+                                <li><a href="#">Предметная фотосъемка</a></li>
+                                <li><a href="#">Видео</a></li>
+                                <li><a href="#">Дизайн карточек товара и инфографика</a></li>
+                                <li><a href="#">Текст + SEO</a></li>
+                                <li><a href="#">Фото 360</a></li>
+                                <li><a href="#">Фотосъемка в раскладку</a></li>
+                                <li><a href="#">Фото на невидимомманекене</a></li>
+                                <li><a href="#">Имиджевая фотосъемка</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__info_items col_7">
+                            <h5 class="footer__info_subtitle">email: </h5>
+                            <a href="support@addmarkets.ru">support@addmarkets.ru</a>
+                            <h5 class="footer__info_subtitle">телефон:</h5>
+                            <p>+7 (499) 460 55 61</p>
+                            <h5 class="footer__info_subtitle">адрес:</h5>
+                            <p>141206, МО, г.Пушкино,<br>
+                                Кудринское ш., д. 6, стр. 1<br>
+                                5 эт. офис №512 </p>
+                        </div>
+
+                        <div class="footer__info_items col_8">
+                            <h5 class="footer__info_subtitle">лёгкий старт:</h5>
+                            <div class="heder__menu-btn footer_transp_btn">
+                                <a href="#popup_heder" class="header-button transp_batton_footer">ОСТАВИТЬ
+                                    ЗАЯВКУ</a>
+                            </div>
+                            <h5 class="footer__info_subtitle">соцсети:</h5>
+                            <p>Подключайся к нашим соцсетям
+                                и следи за новостями.</p>
+                            <div class="social_list_items">
+                                <div class="social_list">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social_link">
+                                        <svg width="52" height="52" viewBox="0 0 52 52"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M47.7873 10.932C47.1939 9.42111 46.4117 8.13959 45.1306 6.85806C43.8494 5.57654 42.5683 4.79413 41.0578 4.20059C39.6014 3.63402 37.9291 3.2563 35.4747 3.1349C33.0203 3.02698 32.2381 3 25.9942 3C19.7503 3 18.9681 3.02698 16.5137 3.1349C14.0728 3.2563 12.4006 3.63402 10.9306 4.21408C9.42021 4.80762 8.13906 5.59003 6.85791 6.87155C5.57676 8.15308 4.79459 9.4346 4.20121 10.9455C3.63481 12.4023 3.25721 14.0751 3.13583 16.5167C3.02795 18.9718 3.00098 19.7543 3.00098 26C3.00098 32.2457 3.02795 33.0282 3.13583 35.4833C3.25721 37.9384 3.63481 39.6111 4.2147 41.068C4.80807 42.5789 5.59025 43.8604 6.8714 45.1419C8.15254 46.4235 9.43369 47.2059 10.9441 47.7994C12.4006 48.366 14.0728 48.7572 16.5272 48.8651C18.9816 48.973 19.7638 49 26.0077 49C32.2516 49 33.0338 48.973 35.4882 48.8651C37.9291 48.7572 39.6014 48.366 41.0713 47.7994C42.5817 47.2059 43.8629 46.4235 45.144 45.1419C46.4252 43.8604 47.2074 42.5789 47.8007 41.068C48.3671 39.6111 48.7582 37.9384 48.8661 35.4833C48.974 33.0282 49.001 32.2457 49.001 26C49.001 19.7543 48.974 18.9718 48.8661 16.5167C48.7447 14.0751 48.3537 12.4023 47.7873 10.932ZM25.9942 37.817C19.4671 37.817 14.1807 32.529 14.1807 26C14.1807 19.471 19.4671 14.183 25.9942 14.183C32.5214 14.183 37.8078 19.471 37.8078 26C37.8078 32.529 32.5214 37.817 25.9942 37.817ZM38.2798 16.4897C36.7559 16.4897 35.5152 15.2487 35.5152 13.7243C35.5152 12.2 36.7559 10.9589 38.2798 10.9589C39.8037 10.9589 41.0444 12.2 41.0444 13.7243C41.0309 15.2487 39.8037 16.4897 38.2798 16.4897ZM33.6676 26C33.6676 30.2358 30.2423 33.6622 26.0077 33.6622C21.7732 33.6622 18.3478 30.2358 18.3478 26C18.3478 21.7642 21.7732 18.3378 26.0077 18.3378C30.2288 18.3378 33.6676 21.7642 33.6676 26Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://telegram.org/" target="_blank" class="social_link">
+                                        <svg width="52" height="52" viewBox="0 0 52 52"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M49.9785 10.583C49.8587 12.1751 48.8708 17.7405 47.8979 23.7489L44.8296 41.5803C44.8296 41.5803 44.5901 44.1969 42.4946 44.6399C40.4141 45.0968 36.9715 43.0478 36.3578 42.5909C35.8639 42.2448 27.1526 37.1363 23.9645 34.6443C23.1113 33.966 22.1234 32.5954 24.0842 31.0171C28.4997 27.2653 33.7833 22.6137 36.9715 19.6648C38.4383 18.3081 39.9201 15.1239 33.7833 18.9864L16.4806 29.7711C16.4806 29.7711 14.5198 30.9064 10.8378 29.8819C7.15568 28.8574 2.85993 27.5007 2.85993 27.5007C2.85993 27.5007 -0.0887201 25.7978 4.94045 23.9842L33.5439 13.0888C36.3728 11.9536 45.9372 8.32636 45.9372 8.32636C45.9372 8.32636 50.3527 6.73427 49.9785 10.583Z"
+                                                fill="currentColor" />
+                                        </svg></a>
+                                </div>
+
+                                <a href="index.html"> <img src="image/lift.svg" alt="наверх"
+                                        class="footer__lift-btn"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__battom">
+                <div class="footer__battom_container container">
+                    <div class="footer__battom_logo">
+                        <img src="image/footer_logo.svg" alt="Логотип">
+                    </div>
+
+                    <div class="footer__battom_text">
+                        &copy; 2021 Addmarkets group<br>
+                        Designed by: @iwon.design
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--=====================POPUP===================-->
+
+        <div class="popup" id="popup_heder">
+            <div class="popup_body">
+                <div class="popup_content heder_popup">
+                    <img src="image/popup_2.png" alt="gerl" class="heder_popup_image">
+                    <div class="heder_popup_form">
+                        <div class="form__title popup_title">
+                            <h3>Обратный звонок</h3>
+                            <p>
+                                Оставьте свой контактный номер телефона и оператор
+                                AddMarkets свяжется с Вами в ближайшее время
+                            </p>
+                            <a href=index.html class="popup_clouse">X</a>
+                        </div>
+                        <form action="#" method="get" class="request-form">
+                            <input type="text" class="request_input" name="first-name" placeholder="Имя &lowast;">
+                            <input type="text" class="request_input" name="phone" placeholder="Телефон &lowast;">
+                            <button type="submit" class="popup_btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                            <div class="chek_conteiner popup_chek">
+                                <input type="checkbox" class="request_checkbox" id="ok_popup">
+                                <label for="ok_popup" class="checkbox_text"> С <a href="#">Политикой
+                                        конфиденциальности</a> ознакомлен
+                                    </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup" id="popup_first">
+            <div class="popup_body">
+                <div class="popup_content first_popup">
+                    <div class="popup_image">
+                        <img src="image/popup_1.svg" alt="gerl">
+                    </div>
+                    <a href=index.html class="popup_clouse popup_first_clouse">X</a>
+                    <div class="popup_form">
+                        <div class="form__title popup_title">
+                            <h3>Получить консультацию</h3>
+                            <p>
+                                Заполните форму и оператор “AddMarkets”
+                                свяжется с Вами в ближайшее время
+                            </p>
+                        </div>
+                        <form action="#" method="get" class="request-form">
+                            <input type="text" class="request_input" name="name" placeholder="Имя &lowast;">
+                            <input type="text" class="request_input" name="phone" placeholder="Телефон &lowast;">
+                            <input type="text" class="request_input" name="email" placeholder="E-mail">
+                            <button type="submit" class="popup_btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                            <div class="chek_conteiner popup_chek">
+                                <input type="checkbox" class="request_checkbox" id="ok_popup_first">
+                                <label for="ok_popup_first" class="checkbox_text"> С <a href="#">Политикой
+                                        конфиденциальности</a> ознакомлен</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup_services">
+            <div class="popup_body">
+                <div class="popup_content services_popup">
+                    <div class="services_popup_form">
+                        <div class="form__title popup_title">
+                            <h3>Запросить расчет стоимости</h3>
+                            <p>
+                                Заполните форму и оператор “AddMarkets”
+                                свяжется с Вами в ближайшее время
+                            </p>
+                            <a href=index.html class="popup_clouse popup_first_clouse">X</a>
+                        </div>
+                        <form action="#" method="get" class="request-form">
+                            <input type="text" class="request_input" name="name" placeholder="Имя &lowast;">
+                            <input type="tel" class="request_input" name="phone" placeholder="Телефон &lowast;">
+                            <input type="email" class="request_input" name="email" placeholder="E-mail">
+                            <input type="text" class="request_input" name="count" placeholder="Кол-во артикулов">
+                            <input type="text" class="request_input"
+                                placeholder="Продукция ~ обувь, платье, кастрюли, кофе, лыжи и.т.д">
+                            <div class="popup_chek check-choose">
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_1">
+                                    <label class="checkbox_text" for="check_1">SEO оптимизированные тексты</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_2">
+                                    <label class="checkbox_text" for="check_2">Предметное фото</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_3">
+                                    <label class="checkbox_text" for="check_3">Видео</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_4">
+                                    <label class="checkbox_text" for="check_4">Фото 360</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_6">
+                                    <label class="checkbox_text" for="check_6">Фото на моделях</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_7">
+                                    <label class="checkbox_text" for="check_7">Фото на невидимом манекене</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_8">
+                                    <label class="checkbox_text" for="check_8">Имиджевая фотосъемка</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_9">
+                                    <label class="checkbox_text" for="check_9">Фото раскладки товара</label>
+                                </div>
+                                <div class="chek_conteiner">
+                                    <input type="checkbox" class="request_checkbox" id="check_10">
+                                    <label class="checkbox_text" for="check_10">Дизайн карточек товара и
+                                        инфографика</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="popup_btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                            <div class="chek_conteiner popup_chek">
+                                <input type="checkbox" class="request_checkbox" id="ok_popup2">
+                                <label for="ok_popup2" class="checkbox_text"> С <a href="#">Политикой
+                                        конфиденциальности</a> ознакомлен</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup_consult">
+            <div class="popup_body">
+                <div class="popup_content consult_popup">
+                    <div class="form__title popup_title">
+                        <h3>Получить консультацию</h3>
+                        <p>
+                            Заполните форму и оператор “AddMarkets”
+                            свяжется с Вами в ближайшее время
+                        </p>
+                        <a href=index.html class="popup_clouse popup_first_clouse">X</a>
+                    </div>
+                    <form action="#" method="get" class="request-form">
+                        <input type="text" class="request_input" name="name" placeholder="Имя &lowast;">
+                        <input type="text" class="request_input" name="phone" placeholder="Телефон &lowast;">
+                        <input type="text" class="request_input" name="email" placeholder="E-mail">
+                        <button type="submit" class="popup_btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                        <div class="chek_conteiner popup_chek">
+                            <input type="checkbox" class="request_checkbox" id="ok_popup_3">
+                            <label for="ok_popup_3" class="checkbox_text"> С <a href="#">Политикой
+                                    конфиденциальности</a> ознакомлен</label>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
