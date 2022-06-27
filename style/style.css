@@ -2867,6 +2867,14 @@ textarea {
 }
 
 @media screen and (max-width: 683px) {
+    .design_why__container {
+        padding-bottom: 0;
+    }
+    
+    .design_why__item {
+        margin: 0;
+        padding: 10px 0;
+    }
     .design_why__item h4 {
         font-size: 13px;
     }
@@ -2875,8 +2883,9 @@ textarea {
         font-size: 11px;
         line-height: 20px;
         color: #585858;
-        margin-bottom: 8px;
+        margin-bottom: 2px;
     }
+    
     .stage_work__item p {
        font-size: 12px;
     }
