@@ -98,7 +98,8 @@ ul {
     padding: 8px 24px;
     margin-left: 32px;
     background: transparent;
-}
+    transition: all .2s;
+   }
 
 .poligon-btn {
     margin-left: 5px;
@@ -106,6 +107,14 @@ ul {
 
 .heder__menu-btn:hover {
     background: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.heder__menu-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-button {
@@ -379,6 +388,7 @@ ul {
 
 .button:hover {
     background: linear-gradient(180deg, #FCBE92 -21.43%, #ED9759 100%);
+    transition: all 1s ease;
 }
 
 .button:active {
@@ -670,17 +680,25 @@ textarea {
     letter-spacing: 0.15em;
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: 1s all ease;
+
 }
 
 .request_btn:hover {
-    background: linear-gradient(180deg, #92dcfc -21.43%, #59a3cb 100%);
-    color: #DCDCDC;
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px #59a3cb inset;
 }
 
 .request_btn:active {
     background: linear-gradient(180deg, #92dcfc -21.43%, #59a3cb 100%);
     transform: scale(0.9);
 }
+
+.request_btn {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+ 
 
 .request_checkbox {
     visibility: hidden;
@@ -1546,6 +1564,9 @@ textarea {
     left: 0;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.6s ease 0s;
 }
 
 .popup:target {
@@ -1560,11 +1581,17 @@ textarea {
     justify-content: center;
     padding: 30px 10px;
 }
-
+.popup:target .popup_content {
+    transform: translate(0, 0); 
+    opacity: 1;
+}
 .popup_content {
     background: #FFFFFF;
     box-shadow: 0px 20px 50px rgba(247, 243, 243, 0.2);
     border-radius: 25px;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    transform: translate(0, -100%);
 }
 
 .heder_popup {
@@ -2279,6 +2306,19 @@ textarea {
 
 .how-work__image {
     width: 100%;
+    animation: moveInBottom 5s ease-out;
+    
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
 }
 
 .how-work__info {
@@ -2885,7 +2925,7 @@ textarea {
         color: #585858;
         margin-bottom: 2px;
     }
-    
+
     .stage_work__item p {
        font-size: 12px;
     }
@@ -2970,3 +3010,4 @@ textarea {
     font-size: 17px !important;
 }
 }
+    
