@@ -824,7 +824,6 @@ textarea {
 }
 
 .services_item {
-    grid: 0 1 360px;
     max-height: 143px;
     background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
     box-shadow: 0px 12px 20px #5858587a;
@@ -1398,7 +1397,7 @@ textarea {
 }
 
 .footer__battom_logo {
-    flex: 0 1 273px;
+    flex: 0 1 250px;
 }
 
 .footer__battom_logo img {
@@ -1422,7 +1421,7 @@ textarea {
 
 @media screen and (max-width: 910px) {
     .footer__lift-btn {
-        transform: translate(0px, 9px);
+        transform: translate(0px, 20px);
         width: 60px;
         height: 60px;
     }
@@ -1444,6 +1443,7 @@ textarea {
             "col_7 col_8"
             "col_1 col_2"
             "col_5 col_6";
+        grid-row-gap: 8px;
     }
 
     .footer__container {
@@ -1527,6 +1527,13 @@ textarea {
         width: 35px;
     }
 }
+
+@media screen and (max-width: 450px) {
+.footer_transp_btn {
+    padding: 5px;
+}
+}
+
 
 /*=============================POPUP========================*/
 
@@ -1886,6 +1893,9 @@ textarea {
     .popup_header_img {
         display: none;
     }
+    .services_popup {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 623px) {
@@ -1924,7 +1934,7 @@ textarea {
     }
     .popup_market_title,
     .long_title {
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -2267,10 +2277,6 @@ textarea {
     align-items: center;
 }
 
-.how-work__img {
-    width: minmax(500px, 1fr);
-}
-
 .how-work__image {
     width: 100%;
 }
@@ -2584,12 +2590,14 @@ textarea {
     margin-bottom: 160px;
 }
 
-.design_second__info p {
+.design_second__info-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #585858;
+    max-width: 800px;
+    margin: 10px auto;
 }
 
 .tage_work__list {
@@ -2729,6 +2737,10 @@ textarea {
         font-size: 12px;
         line-height: 18px;
     }
+
+    .design_second__info-text {
+    font-size: 12px;
+    }
 }
 
 
@@ -2826,6 +2838,7 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+
     .design_why__container {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -2844,7 +2857,7 @@ textarea {
 
     .design_why__item {
         margin: 20px 0;
-        padding-top: 15px;
+        padding: 15px 0;
         background: url("../image/Ellipse\ 35.svg") top no-repeat;
     }
 
@@ -2902,7 +2915,7 @@ textarea {
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 0.8px;
-    color: rgb#585858;
+    color: #585858;
     margin-bottom: 4px;
 }
 
@@ -2926,5 +2939,25 @@ textarea {
 .comand-slide__position {
     font-size: 11px;
     line-height: 14px;
+}
+.design_comand__container {
+    position: relative;
+    padding-bottom: 40px;
+}
+.comand-slider {
+    position: static;
+}
+.swiper-button-next {
+    right: 20% !important;
+    top: 85% !important;
+}
+
+
+.swiper-button-prev {
+    left: 20% !important;
+    top: 85% !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 17px !important;
 }
 }
